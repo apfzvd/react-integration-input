@@ -1,0 +1,51 @@
+.base {
+  display: inline-flex;
+  padding: var(--space-0) var(--space-1);
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-0);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-family-primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--color-blue-3);
+  background-color: var(--color-gray-3);
+  transition: all var(--transition-quick);
+}
+
+.base.iconButton {
+  background: none;
+  padding: 0;
+}
+
+.base:hover {
+  background-color: var(--color-gray-4);
+  color: var(--color-blue-4);
+}
+
+.base:active,
+.base.active {
+  background-color: var(--color-gray-5);
+  color: var(--color-blue-4);
+}
+
+.base:disabled {
+  background-color: var(--color-gray-0);
+  color: var(--color-gray-6);
+  cursor: not-allowed;
+}
+
+.base > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.base.loading > svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--color-blue-3);
+}

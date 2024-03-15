@@ -1,0 +1,20 @@
+.tagContainer {
+  font-family: var(--font-family-primary);
+  padding: 3px var(--space-1);
+  border-radius: var(--border-radius-sm);
+}
+
+.info {
+  background-color: var(--color-gray-1);
+  color: var(--color-blue-4);
+}
+
+.positive {
+  background-color: var(--color-green-0);
+  color: var(--color-green-1);
+}
+
+.negative {
+  background-color: var(--color-red-0);
+  color: var(--color-red-1);
+}

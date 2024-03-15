@@ -1,0 +1,26 @@
+@import '../../config/css/utils.css';
+
+.inputContainer {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.label {
+  margin-right: var(--space-6);
+  margin-top: var(--space-0);
+}
+
+.integrationsColumn {
+  position: relative;
+}
+
+.listItem {
+  margin-bottom: var(--space-1);
+}
+
+.addIntegrationMenu {
+  left: 0;
+  top: 30px;
+  position: absolute;
+}

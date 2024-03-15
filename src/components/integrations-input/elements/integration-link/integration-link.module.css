@@ -1,0 +1,74 @@
+@import '../../../../config/css/utils.css';
+
+.container,
+.link,
+.itemFailed {
+  composes: u-container;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.link > svg,
+.itemFailed > svg {
+  width: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-blue-4);
+  padding: 2px;
+}
+
+.linkId {
+  font-weight: var(--font-family-weight-bold);
+}
+
+.linkTitle {
+  font-weight: var(--font-family-weight-light);
+}
+
+.itemFailed {
+  background-color: initial;
+  color: var(--color-red-1);
+  border-radius: var(--border-radius-sm);
+  margin: 0;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.itemFailed:hover {
+  background-color: var(--color-gray-4);
+}
+
+.itemFailed:active {
+  background-color: var(--color-gray-5);
+}
+
+.hiddenEdition {
+  visibility: hidden;
+  transition: all var(--transition-quick);
+}
+
+.container:hover .hiddenEdition {
+  visibility: visible;
+  transition: all var(--transition-quick);
+}
+
+.actionsMenuContainer {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  z-index: 1;
+}
+
+.actionsMenuItem > svg {
+  width: 24px;
+}
+
+.actionsMenuItem.actionsMenuItemDelete {
+  color: var(--color-red-1);
+}

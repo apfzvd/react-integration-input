@@ -1,0 +1,33 @@
+.label {
+  display: block;
+  color: var(--color-blue-4);
+  margin-bottom: var(--space-0);
+}
+
+.input {
+  color: var(--color-blue-4);
+  background-color: var(--color-gray-1);
+  width: 189px;
+  border-radius: var(--border-radius-sm);
+  margin-right: var(--space-1);
+  padding: var(--space-0) var(--space-1);
+  border: 1px solid transparent;
+}
+
+.input::placeholder {
+  color: var(--color-blue-7);
+}
+
+.input:hover {
+  border: 1px solid var(--color-blue-6);
+}
+
+.input:focus {
+  border: 1px solid var(--color-blue-6);
+  outline: 2px solid var(--color-blue-8);
+}
+
+.error {
+  background-color: var(--color-red-0);
+  color: var(--color-red-1);
+}

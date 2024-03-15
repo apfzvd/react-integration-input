@@ -1,0 +1,38 @@
+@import '../../config/css/utils.css';
+
+.container {
+  min-width: 262px;
+}
+
+.title {
+  font-size: 10px;
+  color: var(--color-blue-2);
+  font-weight: var(--font-family-weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+.item {
+  composes: u-container;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  padding: var(--space-1);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-quick);
+  color: var(--color-blue-2);
+}
+
+.item:hover {
+  background-color: var(--color-blue-0);
+  color: var(--color-blue-6);
+}
+
+.item:active {
+  background-color: var(--color-blue-1);
+  color: var(--color-blue-5);
+}
+
+.itemDisabled {
+  color: var(--color-gray-6);
+}
